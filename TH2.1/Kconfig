@@ -1,0 +1,9 @@
+menu "hello kernel module"
+
+config HELLO
+    tristate "hello kernel"
+    depends on ARM
+    default y if ARM
+    help
+        Select this to run hello kernel module
+endmenu
