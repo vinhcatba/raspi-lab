@@ -45,10 +45,11 @@ Hầu hết các tool cần thiết đã được cài ở TH1.3, nên chúng ta
 > ```
 > Ta sẽ thấy dòng `raspberrypi-kernel/testing,now 1.20210430-1 armhf [installed]` trong đó `1.20210430-1` chính là tag phiên bản kernel hiện tại. 
 > Duyệt tìm tag đó ở https://github.com/raspberrypi/linux sẽ có kết quả là `raspberrypi-kernel_1.20210430-1` tại: https://github.com/raspberrypi/linux/tree/raspberrypi-kernel_1.20210430-1
+> 
 > ![image](https://user-images.githubusercontent.com/29064137/117937314-080ffe00-b330-11eb-85ef-83bf4e5f1310.png)
 > 
 > Để cho chắc chắn, ta nên kiểm tra cả số phiên bản kernel-release. Trên Raspberry Pi chạy lệnh `uname -r` để xem. Kể quả có dạng: `5.10.17-v7+`
-> Vào github vừa tìm được (https://github.com/raspberrypi/linux/tree/raspberrypi-kernel_1.20210430-1) mờ Makefile ở 5 dòng đầu ta có thể thấy:
+> Vào github vừa tìm được (https://github.com/raspberrypi/linux/tree/raspberrypi-kernel_1.20210430-1) mở Makefile tại thư mục ngoài cùng. Ở những dòng đầu ta có thể thấy:
 > ```makefile
 > VERSION = 5
 > PATCHLEVEL = 10
@@ -143,6 +144,7 @@ make ARCH=arm menuconfig
 ```
 ![image](https://user-images.githubusercontent.com/29064137/117946208-48c04500-b339-11eb-91b7-1eeb036e0e35.png)
 ![image](https://user-images.githubusercontent.com/29064137/117946313-64c3e680-b339-11eb-9c8d-fb07f2f89d85.png)
+
 - Sau đó Save và Exit menuconfig
 - Build lại kernel và ta sẽ có một kernel với module hello được cài sẵn.
 ```shell
