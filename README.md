@@ -132,7 +132,7 @@ config HELLO
         Select this to run hello kernel module
 endmenu
 ```
-Khối `menu/endmenu` sẽ tạo một menu cấu hình trong menuconfig. `config HELLO` sẽ tự thêm tiền tố `CONFIG_` trước `HELLO` nếu module này được chọn trong menuconfig. Lúc này ta được biến `CONFIG_HELLO` như trong `Makefile`. `tristate "hello kernel"` sẽ tạo một lựa chọn "hello kernel" trong menu "hello kernel module". `tristate` nhận 3 giá trị là y, m, n như đã nói ở trên, `bool` nhận 2 giá trị là y hoặc n. `depends on ARM` giúp menu này chỉ hiển thị khi kiến trúc là ARCH=arm. `default M if ARM` cho giá trị mặc định của menu là m nếu kiến trúc là arm. `help` hiển thị trợ giúp menu.
+Khối `menu/endmenu` sẽ tạo một menu cấu hình trong menuconfig. `config HELLO` sẽ tự thêm tiền tố `CONFIG_` trước `HELLO` nếu module này được chọn trong menuconfig. Lúc này ta được biến `CONFIG_HELLO` như trong `Makefile`. `tristate "hello kernel"` sẽ tạo một lựa chọn "hello kernel" trong menu "hello kernel module". `tristate` nhận 3 giá trị là y, m, n như đã nói ở trên, nếu là `bool` thì nhận 2 giá trị là y hoặc n. `depends on ARM` giúp menu này chỉ hiển thị khi kiến trúc là ARCH=arm. `default M if ARM` cho giá trị mặc định của menu là m nếu kiến trúc là arm. `help` hiển thị trợ giúp menu.
 - Tiếp đó, ta cần thêm đường dẫn tới 2 file `Makefile` và `Kconfig` mới tạo để hệ thống biết. ***Chuyển tới thư mục mẹ `drivers`*** và chỉnh sửa `Makefile`, `Kconfig` ở đây:
     - Trong file Kconfig thêm dòng như sau:
 `source “drivers/hello/Kconfig”`
