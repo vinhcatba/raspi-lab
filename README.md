@@ -1,5 +1,5 @@
 # raspi-lab
-Bài tập thực hành lập trình nhúng linux trên raspberry pi, học viện Kỹ thuật Mật Mã 2021.
+Bài tập thực hành lập trình nhúng linux trên raspberry pi, học viện Kỹ thuật Mật Mã 2021. Trong mỗi thư mục TH có file giải thích `.docx` + ảnh đề bài, cùng với đó là mã nguồn chương trình. Chú ý đọc readme.md của từng bài TH, nếu có lỗi sai hay lưu ý thì sẽ ghi trong đó. 
 # Chuẩn bị
 Raspberry Pi 3B, được cài Raspbian OS 32bit, một máy host Ubuntu 18.04 hoặc 20.04 (ở đây mình dùng 20.04). Config SSH trên raspi bằng lệnh sudo raspi-config -> vào mục Interface Options -> SSH -> Enable.
 # Phần mềm khuyên dùng
