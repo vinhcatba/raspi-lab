@@ -6,7 +6,7 @@ Bài tập thực hành lập trình nhúng linux trên raspberry pi, học vi�
 - Các bài từ 10 trở đi là về cài đặt và sử dụng Qt C++ framework, đây là 1 framework hỗ trợ tạo chương trình có giao diện người dùng (GUI), có thể tạo giao diện bằng cách kéo thả, đa nền tảng với ngôn ngữ C++.
 # Chuẩn bị
 Raspberry Pi 3B, được cài Raspbian OS 32bit, một máy host Ubuntu 18.04 hoặc 20.04 (ở đây mình dùng 20.04). Config SSH trên raspi bằng lệnh sudo raspi-config -> vào mục Interface Options -> SSH -> Enable.
-# Phần mềm khuyên dùng
+# Phần mềm khuyên dùng (không bắt buộc)
 - remote.it: tạo kết nối p2p giữa các thiết bị với ras qua internet, có thể chia sẻ quyền với nhiều tài khoản, miễn phí. Sử dụng nó kèm với các phần mềm bên dưới để có thể tạo kết nối ssh, vnc, tcp socket, v.v **qua internet**.
 - vnc viewer: remote desktop 
 - putty: ssh terminal trên windows
