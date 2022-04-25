@@ -67,4 +67,4 @@ make ARCH=arm menuconfig
 ```shell
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j $(($(nproc)*3/2))
 ```
-- Tiếp theo, cài đặt nhân vào thẻ nhớ tham khảo trong https://www.raspberrypi.org/documentation/linux/kernel/building.md
+- Tiếp theo, cài đặt nhân vào thẻ nhớ tham khảo trong https://www.raspberrypi.com/documentation/computers/linux_kernel.html#install-directly-onto-the-sd-card
