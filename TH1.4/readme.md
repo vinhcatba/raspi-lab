@@ -43,4 +43,4 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig
 ```shell
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j $(($(nproc)*3/2))
 ```
-- Các bước tiếp theo, là cài đặt nhân vào thẻ nhớ, có thể tham khảo tiếp trong https://www.raspberrypi.org/documentation/linux/kernel/building.md
+- Các bước tiếp theo, là cài đặt kernel vào thẻ nhớ, có thể tham khảo tiếp trong https://www.raspberrypi.com/documentation/computers/linux_kernel.html#install-directly-onto-the-sd-card
